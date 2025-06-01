@@ -214,10 +214,10 @@ const channelMessage = {
 };
 
 // Schedule cron jobs
-//cron.schedule('*/1 * * * *', () => {
-//  console.log('Running cron job for ledger entries...');
-//  sendMessage(ledgerMessage, processLedgerEntries);
-//});
+cron.schedule('*/1 * * * *', () => {
+  console.log('Running cron job for ledger entries...');
+  sendMessage(ledgerMessage, processLedgerEntries);
+});
 
 
 cron.schedule('*/1 * * * *', () => {
